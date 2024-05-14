@@ -5,7 +5,7 @@ const Footer = () => {
 	const year = new Date().getFullYear()
 
 	return (
-		<footer className="flex flex-row flex-wrap justify-center items-center py-5 mt-10 text-sm text-black font-mono">
+		<footer className="flex flex-row flex-wrap justify-center items-center py-5 mt-10 text-sm text-black">
 			<p>© {year} Tüm hakları saklıdır.</p>
 			<p className="ml-2">
 				Made with ❤️ &nbsp;
