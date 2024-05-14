@@ -324,7 +324,7 @@ const Projects = () => {
 							Netflix Clone uygulamasıdır. Kullanıcılar, filmleri inceleyebilir, favori listelerine ekleyebilir ve
 							filmleri izleyebilir. NextAuth ile güvenli kullanıcı doğrulaması sağlanmıştır. Prisma ORM ile veritabanı
 							işlemleri gerçekleştirilmiştir. Zustand ile global state yönetimi sağlanmıştır. Swiper Slider ile slider
-							özelliği eklenmiştir. Tailwindcss ile responsive tasarım kodlanmıştır.A
+							özelliği eklenmiştir. Tailwindcss ile responsive tasarım kodlanmıştır.
 						</p>
 						<div className="flex flex-row justify-start items-center space-x-5">
 							<a
