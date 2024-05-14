@@ -1,4 +1,5 @@
 import { FiExternalLink } from 'react-icons/fi'
+import Image from 'next/image'
 
 const Projects = () => {
 	return (
@@ -7,7 +8,13 @@ const Projects = () => {
 			<div className="flex flex-wrap flex-col justify-center items-center">
 				{/* project card */}
 				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
-					<img src="/img/project.png" alt="" className="w-full md:w-[530px] h-auto md:h-[398px]" />
+					<Image
+						src="/img/project.png"
+						alt=""
+						className="w-full md:w-[530px] h-auto md:h-[398px]"
+						width={530}
+						height={398}
+					/>
 					<div className="flex flex-col justify-center items-start space-y-3 w-full px-5">
 						<h3 className="text-4xl font-extrabold">01</h3>
 						<h3 className="text-2xl font-bold">CashMate App</h3>

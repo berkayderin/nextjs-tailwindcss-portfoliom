@@ -1,4 +1,5 @@
 import { FaLinkedinIn } from 'react-icons/fa'
+import Image from 'next/image'
 import { IoLogoGithub } from 'react-icons/io'
 
 const Hero = () => {
@@ -41,7 +42,13 @@ const Hero = () => {
 
 			{/* Right side */}
 			<div className="mt-5 md:mt-0">
-				<img src="/img/banner.png" alt="Berkay Derin" className="h-auto w-[400px] md:w-[575px]" />
+				<Image
+					src="/img/banner.png"
+					alt="Berkay Derin"
+					className="h-auto w-[400px] md:w-[575px]"
+					width={575}
+					height={400}
+				/>
 			</div>
 		</div>
 	)
