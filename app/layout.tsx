@@ -1,8 +1,10 @@
 import './globals.css'
 import 'aos/dist/aos.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 import type { Metadata } from 'next'
 import { Sora } from 'next/font/google'
+import { ToastContainer } from 'react-toastify'
 
 const sora = Sora({ subsets: ['latin'] })
 
@@ -17,7 +19,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={sora.className}>{children}</body>
+			<body className={sora.className}>
+				<ToastContainer />
+				{children}
+			</body>
 		</html>
 	)
 }

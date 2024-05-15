@@ -1,7 +1,35 @@
+'use client'
+
+import { SubmitHandler, useForm } from 'react-hook-form'
+
 import { FaLinkedinIn } from 'react-icons/fa'
+import { FormValues } from '@/type/formTypes'
 import { IoLogoGithub } from 'react-icons/io5'
+import { sendToast } from '@/utils/sendToast'
 
 const Contact = () => {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors }
+	} = useForm<FormValues>()
+
+	const onSubmit: SubmitHandler<FormValues> = async (data) => {
+		const response = await fetch('/api/contact', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(data)
+		})
+
+		if (response.ok) {
+			sendToast('Mesajınız başarıyla gönderildi.')
+		} else {
+			sendToast('Bir hata oluştu. Lütfen tekrar deneyin.', false)
+		}
+	}
+
 	return (
 		<section className="flex flex-col md:flex-row justify-center items-center text-black mt-10 gap-x-60">
 			{/* contact info */}
@@ -32,14 +60,33 @@ const Contact = () => {
 			</div>
 			{/* form */}
 			<div className="flex flex-col justify-center items-center">
-				<form className="flex flex-col justify-center items-start space-y-5 mt-10 px-4 w-[24rem] md:w-[30rem] md:px-0">
-					<input type="text" placeholder="Adınız" className="border border-gray-300 p-3 rounded-md w-full" />
+				<form
+					onSubmit={handleSubmit(onSubmit)}
+					className="flex flex-col justify-center items-start space-y-5 mt-10 px-4 w-[24rem] md:w-[30rem] md:px-0"
+				>
+					<input
+						type="text"
+						placeholder="Adınız"
+						{...register('name', { required: 'Adınız zorunludur.' })}
+						className="border border-gray-300 p-3 rounded-md w-full"
+					/>
+					{errors.name && <span className="text-red-500">{errors.name.message}</span>}
 					<input
 						type="email"
 						placeholder="E-posta Adresiniz"
+						{...register('email', {
+							required: 'E-posta adresi zorunludur.',
+							pattern: { value: /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/, message: 'Geçerli bir e-posta adresi girin.' }
+						})}
 						className="border border-gray-300 p-3 rounded-md w-full"
 					/>
-					<textarea placeholder="Mesajınız" className="border border-gray-300 p-3 rounded-md w-full" />
+					{errors.email && <span className="text-red-500">{errors.email.message}</span>}
+					<textarea
+						placeholder="Mesajınız"
+						{...register('message', { required: 'Mesajınız zorunludur.' })}
+						className="border border-gray-300 p-3 rounded-md w-full"
+					/>
+					{errors.message && <span className="text-red-500">{errors.message.message}</span>}
 					<button type="submit" className="bg-black text-white p-3 rounded-md w-full md:w-[10rem]">
 						Gönder
 					</button>
