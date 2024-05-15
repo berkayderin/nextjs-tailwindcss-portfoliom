@@ -1,14 +1,28 @@
+'use client'
+
+import AOS from 'aos'
 import { FaGithub } from 'react-icons/fa'
 import { FiExternalLink } from 'react-icons/fi'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 const Projects = () => {
+	useEffect(() => {
+		AOS.init({ duration: 1500 })
+	}, [])
+
 	return (
 		<section className="bg-black text-white mt-10">
-			<h2 className="text-center text-4xl font-bold pt-0 md:pt-10">Projelerim</h2>
+			<h2 className="text-center text-4xl font-bold pt-0 md:pt-10" data-aos="zoom-in">
+				Projelerim
+			</h2>
 			<div className="flex flex-wrap flex-col justify-center items-center">
-				{/* project card 1*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 1 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<Image
 						src="/img/project.png"
 						alt=""
@@ -47,8 +61,12 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-				{/* project card 2*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 2 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<div className="flex flex-col justify-center items-start space-y-3 w-full px-5">
 						<h3 className="text-4xl font-extrabold">02</h3>
 						<h3 className="text-2xl font-bold">FullStack Duyuru Projesi</h3>
@@ -88,8 +106,12 @@ const Projects = () => {
 						height={398}
 					/>
 				</div>
-				{/* project card 3*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 3 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<Image
 						src="/img/project.png"
 						alt=""
@@ -127,8 +149,12 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-				{/* project card 4*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 4 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<div className="flex flex-col justify-center items-start space-y-3 w-full px-5">
 						<h3 className="text-4xl font-extrabold">04</h3>
 						<h3 className="text-2xl font-bold">Nodejs Otel Rezervasyonu Api</h3>
@@ -159,8 +185,12 @@ const Projects = () => {
 						height={398}
 					/>
 				</div>
-				{/* project card 5*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 5 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<Image
 						src="/img/project.png"
 						alt=""
@@ -191,8 +221,12 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-				{/* project card 6*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 6 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<div className="flex flex-col justify-center items-start space-y-3 w-full px-5">
 						<h3 className="text-4xl font-extrabold">06</h3>
 						<h3 className="text-2xl font-bold">FullStack Kitap Yönetim Sistemi</h3>
@@ -230,8 +264,12 @@ const Projects = () => {
 						height={398}
 					/>
 				</div>
-				{/* project card 7*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 7 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<Image
 						src="/img/project.png"
 						alt=""
@@ -269,8 +307,12 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-				{/* project card 8*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 8 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<div className="flex flex-col justify-center items-start space-y-3 w-full px-5">
 						<h3 className="text-4xl font-extrabold">08</h3>
 						<h3 className="text-2xl font-bold">Nextjs Landing Page</h3>
@@ -307,8 +349,12 @@ const Projects = () => {
 						height={398}
 					/>
 				</div>
-				{/* project card 9*/}
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5">
+				{/* project card 9 */}
+				<div
+					className="flex flex-col md:flex-row justify-center items-center space-x-0 space-y-5 md:space-y-0 md:space-x-1 w-full md:w-[75rem] py-5"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-center"
+				>
 					<Image
 						src="/img/project.png"
 						alt=""

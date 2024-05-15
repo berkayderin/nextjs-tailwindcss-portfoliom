@@ -30,7 +30,7 @@ const Hero = () => {
 						<FaLinkedinIn className="w-10 h-10" />
 					</a>
 					<a
-						href="github.com/berkayderin"
+						href="https://github.com/berkayderin"
 						target="_blank"
 						rel="noreferrer"
 						className="border-2 border-black p-2 w-12 h-12 flex justify-center items-center hover:bg-black hover:text-white transition-all duration-300 rounded-md"

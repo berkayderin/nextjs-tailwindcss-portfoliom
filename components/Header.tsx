@@ -11,6 +11,13 @@ const Header = () => {
 		setIsOpen(!isOpen)
 	}
 
+	const downloadResume = () => {
+		const link = document.createElement('a')
+		link.href = 'https://drive.usercontent.google.com/u/0/uc?id=1lt1R14X0g5x8jJck0MDo7GaebfsDrv25&export=download'
+		link.download = 'Berkay Derin - Özgeçmiş.pdf'
+		link.click()
+	}
+
 	return (
 		<div className="flex justify-between items-center h-16 text-slate-900 px-4 font-semibold text-lg w-full max-w-screen-xl mx-auto">
 			<div>Berkay Derin</div>
@@ -35,7 +42,10 @@ const Header = () => {
 					İletişim
 				</a>
 			</div>
-			<button className="hidden md:block bg-slate-900 text-white px-4 py-2 rounded-md font-medium">
+			<button
+				onClick={downloadResume}
+				className="hidden md:block bg-slate-900 text-white px-4 py-2 rounded-md font-medium"
+			>
 				Özgeçmiş
 				<IoCodeDownloadOutline className="inline-block ml-2 w-6 h-6" />
 			</button>

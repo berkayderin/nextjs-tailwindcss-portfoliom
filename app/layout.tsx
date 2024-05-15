@@ -1,4 +1,5 @@
 import './globals.css'
+import 'aos/dist/aos.css'
 
 import type { Metadata } from 'next'
 import { Sora } from 'next/font/google'
