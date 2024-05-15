@@ -2,12 +2,15 @@
 
 import { DiBootstrap, DiMongodb, DiMysql } from 'react-icons/di'
 import { FaCss3, FaHtml5, FaNodeJs, FaPython, FaReact } from 'react-icons/fa'
+import { IoLogoCss3, IoLogoHtml5 } from 'react-icons/io5'
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri'
 import { SiExpress, SiJavascript, SiTypescript } from 'react-icons/si'
 
 import AOS from 'aos'
+import { BiLogoTypescript } from 'react-icons/bi'
 import { GrGraphQl } from 'react-icons/gr'
 import { IoLogoFirebase } from 'react-icons/io5'
+import { RiJavascriptFill } from 'react-icons/ri'
 import { useEffect } from 'react'
 
 const Skills = () => {
@@ -22,12 +25,12 @@ const Skills = () => {
 			</h2>
 			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mt-10 px-4">
 				{[
-					{ icon: <FaHtml5 className="w-14 h-14" />, name: 'HTML5' },
-					{ icon: <FaCss3 className="w-14 h-14" />, name: 'CSS3' },
+					{ icon: <IoLogoHtml5 className="w-14 h-14" />, name: 'HTML5' },
+					{ icon: <IoLogoCss3 className="w-14 h-14" />, name: 'CSS3' },
 					{ icon: <RiTailwindCssFill className="w-14 h-14" />, name: 'Tailwind CSS' },
 					{ icon: <DiBootstrap className="w-14 h-14" />, name: 'Bootstrap' },
-					{ icon: <SiJavascript className="w-14 h-14" />, name: 'JavaScript' },
-					{ icon: <SiTypescript className="w-14 h-14" />, name: 'TypeScript' },
+					{ icon: <RiJavascriptFill className="w-14 h-14" />, name: 'JavaScript' },
+					{ icon: <BiLogoTypescript className="w-14 h-14" />, name: 'TypeScript' },
 					{ icon: <FaReact className="w-14 h-14" />, name: 'React' },
 					{ icon: <RiNextjsFill className="w-14 h-14" />, name: 'Next.js' },
 					{ icon: <SiExpress className="w-14 h-14" />, name: 'Express.js' },
