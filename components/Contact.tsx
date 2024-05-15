@@ -3,7 +3,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const Contact = () => {
 	return (
-		<section className="flex flex-row justify-center items-center text-black mt-10 gap-x-60">
+		<section className="flex flex-col md:flex-row justify-center items-center text-black mt-10 gap-x-60">
 			{/* contact info */}
 			<div className="">
 				<h2 className="text-4xl font-bold mt-10 text-center md:text-left">Haydi İletişime Geçelim</h2>
