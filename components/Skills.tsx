@@ -8,7 +8,7 @@ import { IoLogoFirebase } from 'react-icons/io5'
 
 const Skills = () => {
 	return (
-		<section className="flex flex-col justify-center items-center py-20">
+		<section className="flex flex-col justify-center items-center py-10 md:py-20">
 			<h2 className="text-4xl font-bold text-gray-800">Yeteneklerim</h2>
 			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mt-10 px-4">
 				{[

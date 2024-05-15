@@ -13,9 +13,14 @@ const About = () => {
 			<div className="flex flex-col justify-center items-center md:items-start space-y-5 px-5 md:px-0">
 				<h2 className="text-center md:text-start text-4xl font-bold text-gray-800">Hakkımda</h2>
 				<p className="text-lg font-light text-zinc-500 text-justify">
-					Merhaba, ben Berkay Derin. 2001 yılında Zonguldakta doğdum. Burdur Mehmet Akif Ersoy Üniversitesi Yazılım
-					Mühendisliği 3. sınıf öğrencisiyim. Kendimi sürekli geliştirmeye ve yeni şeyler öğrenmeye açığım. Bu siteyi
-					geliştirirken Next.js ve Tailwind CSS teknolojilerini kullandım.
+					Node.js ve React.js başta olmak üzere modern web teknolojileri konusunda tutkulu ve deneyimli bir
+					geliştiriciyim. Bionlukta freelancer olarak kazandığım Frontend ve Backend (Nodejs) tecrübesi ile karmaşık
+					sorunları çözme yeteneğimi geliştirdim.
+				</p>
+				<p className="text-lg font-light text-zinc-500 text-justify">
+					Yeni teknolojileri hızla öğrenme ve uygulama konusundaki hevesimle, staj yapmayı hedeflediğim şirketinizde hem
+					mevcut becerilerimi geliştirmek hem de yenilikçi projelere katkıda bulunmak istiyorum. Katkı sağlayabileceğim
+					projelerde yer almak için sabırsızlanıyorum
 				</p>
 			</div>
 		</div>

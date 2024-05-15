@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<div className="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5 w-full max-w-screen-xl mx-auto py-10">
 			{/* Left side */}
-			<div className="flex flex-col justify-center items-start space-y-5 px-5 md:px-0">
+			<div className="flex flex-col justify-center items-center md:items-start space-y-5 px-5 md:px-0">
 				<div className="text-5xl flex flex-col space-y-5 text-center md:text-left">
 					<h1 className="font-bold">
 						<span className="font-light">Merhaba, ben </span> Berkay Derin
@@ -41,7 +41,7 @@ const Hero = () => {
 			</div>
 
 			{/* Right side */}
-			<div className="mt-5 md:mt-0">
+			<div className="mt-0 md:mt-5 hidden md:block">
 				<Image
 					src="/img/banner.png"
 					alt="Berkay Derin"

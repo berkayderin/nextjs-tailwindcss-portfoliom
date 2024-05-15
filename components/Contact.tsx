@@ -5,7 +5,7 @@ const Contact = () => {
 	return (
 		<section className="flex flex-col md:flex-row justify-center items-center text-black mt-10 gap-x-60">
 			{/* contact info */}
-			<div className="">
+			<div className="flex flex-col justify-center items-center md:items-start space-y-5 px-4 md:px-0">
 				<h2 className="text-4xl font-bold mt-10 text-center md:text-left">Haydi İletişime Geçelim</h2>
 				<p className="text-gray-500 mt-5 mb-5 text-center md:text-left">
 					Benimle iletişime geçmek için aşağıdaki formu doldurabilir <br className="hidden md:block" /> ya da sosyal
@@ -32,7 +32,7 @@ const Contact = () => {
 			</div>
 			{/* form */}
 			<div className="flex flex-col justify-center items-center">
-				<form className="flex flex-col justify-center items-start space-y-5 mt-10 px-4 md:w-[30rem] md:px-0">
+				<form className="flex flex-col justify-center items-start space-y-5 mt-10 px-4 w-[24rem] md:w-[30rem] md:px-0">
 					<input type="text" placeholder="Adınız" className="border border-gray-300 p-3 rounded-md w-full" />
 					<input
 						type="email"
