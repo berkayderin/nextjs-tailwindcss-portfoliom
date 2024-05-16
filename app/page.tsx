@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Courses from '@/components/Courses'
 import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -17,6 +18,7 @@ export default function Home() {
 			<Experience />
 			<About />
 			<Projects />
+			<Courses />
 			<Testimonial />
 			<Contact />
 			<Footer />

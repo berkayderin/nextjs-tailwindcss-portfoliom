@@ -20,7 +20,7 @@ const Hero = () => {
 						üzerinden freelance hizmetler sunmaktayım. +25 müşteri memnuniyeti ile çalışmalarımı sürdürmekteyim.
 					</p>
 					<p className="text-base max-w-lg text-zinc-500 text-justify">
-						İşte benimle ilgili daha fazla bilgiye ulaşabileceğiniz platformlar:
+						Aşağıdaki sosyal medya hesaplarımdan benimle iletişime geçebilirsiniz.
 					</p>
 				</div>
 
@@ -45,9 +45,9 @@ const Hero = () => {
 						href="https://bionluk.com/derinberkay/tasarimlarinizi-HTML-CSS-React-a-dokebilirim-511778"
 						target="_blank"
 						rel="noreferrer"
-						className="border-2 border-black p-2 w-12 h-12 flex justify-center items-center hover:bg-black hover:text-white transition-all duration-300 rounded-md"
+						className="border-2 border-black p-2 w-12 h-12 flex justify-center items-center hover:bg-black hover:text-white transition-all duration-300 rounded-md text-3xl font-extrabold"
 					>
-						<Image src="/img/logo_bionluk.png" alt="Bionluk" className="w-10 h-8" width={20} height={20} />
+						bi
 					</a>
 				</div>
 			</div>
